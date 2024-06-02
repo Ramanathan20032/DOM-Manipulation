@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>task 1</title>
+</head>
+<body>
+    <input id="inputBox" onkeyup="update()">
+    <h1 id="result"></h1>
+</body>
+<script>
+    // selecting the input, h1
+    var inputBox = document.getElementById("inputBox")
+    var result = document.getElementById("result")
+
+    function update(){
+        result.textContent = inputBox.value
+    }
+</script>
+</html>

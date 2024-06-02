@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    <input id="num1" type="text">
+    <input id="num2" type="text">
+    <button onclick="changeResult()">add</button>
+    <p id="result"></p>
+</body>
+
+<Script>
+    // selecting the num1
+    // selecting the num2
+    var num1 = document.getElementById("num1")
+    var num2 = document.getElementById("num2")
+    // selecting the result
+    var result = document.getElementById("result")
+    
+    function changeResult(){
+        var num1value = Number(num1.value)
+        var num2value = Number(num2.value)
+
+        var total = num1value + num2value
+        result.textContent = total
+    }
+
+</Script>
+</html>

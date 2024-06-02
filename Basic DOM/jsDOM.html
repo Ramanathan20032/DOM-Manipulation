@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-transform: capitalize;
+        }
+    </style>
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="title">hello world</h1>
+</body>
+
+<script>
+    // console.log(document.getElementById("title").textContent = "bye world")
+    content = document.getElementById("title")
+    console.log(content.textContent)
+    content.textContent = "bye world"
+</script>
+</html>

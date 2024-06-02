@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+</head>
+<body>
+    <h1 id="result">Name</h1>
+    <button id="button1" onclick="btn1()">John</button>
+    <button id="button2" onclick="btn2()">Praveen</button>
+    <button id="button3" onclick="btn3()">Karthi</button>
+</body>
+<script>
+    // Selecting h1
+    var result = document.getElementById("result")
+    var button1 = document.getElementById("button1")
+    var button2 = document.getElementById("button2")
+    var button3 = document.getElementById("button3")
+
+    function btn1(){
+        result.textContent = button1.textContent
+    }
+    function btn2(){
+        result.textContent = button2.textContent
+    }
+    function btn3(){
+        result.textContent = button3.textContent
+    }
+</script>
+</html>

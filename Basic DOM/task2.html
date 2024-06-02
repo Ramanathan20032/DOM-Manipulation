@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+</head>
+<body>
+    <button onclick="add()">Add Hello</button>
+    <div id="result"></div>
+</body>
+<script>
+    var div = document.getElementById("result")
+
+    // thing that need to get print
+    var content = "Hello"
+    function add(){
+
+        // Adding h1 to the div
+        var h1 = document.createElement("h1") /*<h1></h1>*/
+        h1.textContent = content    /*<h1> hello(content) </h1>*/
+        // appending the h1 into the div
+        div.append(h1)
+    }
+</script>
+</html>

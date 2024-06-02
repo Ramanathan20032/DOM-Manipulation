@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4(1)</title>
+</head>
+<body>
+    <h1 id="result">Name</h1>
+    <!-- event(object) - which have the details of the button -->
+    <button onclick="update(event)">John</button>
+    <button onclick="update(event)">Praveen</button>
+    <button onclick="update(event)">Karthi</button>
+</body>
+<script>
+    // select h1
+    var result = document.getElementById("result")
+
+    function update(event){
+        // console.log(event)                       // have the details of the button
+        // console.log(event.target)                // the button has been selected
+        // console.log(event.target.textContent)    // the content of the button is selected
+        result.textContent = event.target.textContent
+    }
+</script>
+</html>
